@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./css/global.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>Wybierz auto marzeń!</header>
+    <h2 id="wybierz-samochod">Lista samochodów</h2>
+      <ul class="auta">
+        <li>
+            <h3 id="nazwa1">Toyota Corolla</h3>
+            <img src="./css/pexels-toyota.jpg" alt="Toyota Corolla" width="500">
+          <p>Rocznik: 2021</p>
+          <p>Cena: 80000 zł</p>
+          <p>Moc silnika: 140 KM</p>
+          <p>Przebieg: 60000 km</p>
+          <button class="btn-car" id="1">klik</button>
+        </li>
+        <li>
+          <h3 id="nazwa2">BMW X5</h3>
+          <img src="./css/pexels-BMW.jpg" alt="BMW X5" width="500">
+          <p>Rocznik: 2019</p>
+          <p>Cena: 250000 zł</p>
+          <p>Moc silnika: 100 KM</p>
+          <p>Przebieg: 120000 km</p>
+          <button class="btn-car" id="2">klik</button>
+        </li>
+        <li>
+          <h3 id="nazwa3">Ford Mustang</h3>
+          <img src="./css/pexels-mustang.jpg" alt="Ford Mustang" width="500">
+          <p>Rocznik: 2020</p>
+          <p>Cena: 170000 zł</p>
+          <p>Moc silnika: 200 KM</p>
+          <p>Przebieg: 80000 km</p>
+          <button class="btn-car" id="3">klik</button>
+        </li>
+        <li>
+          <h3 id="nazwa4">Mercedes-Benz G-Class</h3>
+          <img src="./css/pexels-merc.jpg" alt="Mercedes-Benz G-Class" width="500">
+          <p>Rocznik: 2018</p>
+          <p>Cena: 200000 zł</p>
+          <p>Moc silnika: 150 KM</p>
+          <p>Przebieg: 120000 km</p>
+          <button class="btn-car" id="4">klik</button>
+        </li>
+        <li>
+          <h3 id="nazwa5">Audi A7</h3>
+          <img src="./css/pexels-audi.jpg" alt="Audi A7" width="500">
+          <p>Rocznik: 2022</p>
+          <p>Cena: 150000 zł</p>
+          <p>Moc silnika: 100 KM</p>
+          <p>Przebieg: 9000 km</p>
+          <button class="btn-car" id="5">klik</button>
+        </li>
+      </ul>
+    </main>
+
+<section id="formularz">
+  <h2>Formularz</h2>
+  <div id="samochod-info"> 
+  </div>
+  <div id="cena-calkowita">
+  </div>
+  <form action="">
+    <div>
+      <label>Wybierz finansowanie:</label>
+      <div>
+        <label>
+          <input id="radio-leasing" type="radio" name="finansowanie" value="leasing" checked>
+          Leasing
+        </label>
+        <label>
+          <input id="radio-gotówka" type="radio" name="finansowanie" value="gotówka">
+          Gotówka
+        </label>
+      </div>
+    </div>
+  
+    <div>
+      <label>Podaj dane przyszłego właściciela:</label>
+      <div>
+        <label>
+          Imię i nazwisko:
+          <input id="user-data" type="text" name="imie-nazwisko" required>
+        </label>
+        <br>
+        <div class="dateData">
+          <label for="date" class="form-label">Data dostawy:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="date"
+            name="date"
+            required
+          />
+         </div>
+      </div>
+    </div>
+  
+    <div>
+      <label>Wybierz akcesoria:</label>
+      <div>
+        <label>
+          <input id="check-klimatyzacja" type="checkbox" name="akcesoria" value="klimatyzacja">
+          Klimatyzacja (1000 zł)
+        </label>
+        <br>
+        <label>
+          <input id="check-nawigacja" type="checkbox" name="akcesoria" value="nawigacja">
+          Nawigacja (800 zł)
+        </label>
+      </div>
+    </div>
+  
+    <div>
+      <button type="submit" onclick="return validateForm()">Zakup</button>
+      <button type="button" onclick="goBack()">Powrót do wyboru</button>
+    </div>
+  
+  </form>
+  
+
+  <div id="error-message"></div>
+  <div id="success-message"></div>
+  </section>
+
+
+
+    <section id="podsumowanie">Podziękowanie za zamówienie</section>
+    
+<div>
+    <button type="button" onclick="clearLocalStorage()">OK</button>
+</div>
+
+
+    
+</body>
+</html>
+

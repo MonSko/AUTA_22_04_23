@@ -1,0 +1,89 @@
+/* Globalne style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* Nagłówek */
+header {
+  background-color:  #008CBA;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Główna sekcja */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.auta {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  max-width: 100%;
+}
+
+.auta li {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 20px;
+}
+
+.auta img {
+  margin: 10px 0;
+  max-width: 100%;
+}
+
+/* Sekcja formularza */
+#formularz {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Sekcja podziękowania */
+section:last-of-type {
+  background-color: #008CBA;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+img.podsumowanie-img {
+  max-width: 505px;
+  margin: 10px 0;
+}
